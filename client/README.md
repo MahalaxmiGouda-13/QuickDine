@@ -1,71 +1,126 @@
-# QuickDine Frontend
 
-Welcome to the frontend repository for **QuickDine** – a modern, premium table booking and reservation platform designed for a seamless dining experience.
+# 🍽️ QuickDine
 
-This application is built using **React 19**, **Vite**, **TypeScript**, and **Tailwind CSS v4**.
-
-## ✨ Features
-
-- **Discerning Curation**: Clean, premium, and responsive search & filter options to browse dining venues by location, cuisine, price range, and rating.
-- **Seat Availability System**: Live check of table slots and seat capacity for a chosen reservation date.
-- **Seamless Booking Flow**: Reservation request with occasion selection and special dining requests.
-- **Role-Based Portals**:
-  - **Diners**: Book tables, track active reservations, and cancel requests.
-  - **Restaurant Owners**: Register a venue, manage profile information, and confirm/cancel incoming reservations.
-  - **Administrators**: Approve new restaurant registrations and monitor system-wide metrics.
-
-## 🛠️ Tech Stack
-
-- **Framework**: React 19 (Vite)
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS v4
-- **Routing**: React Router v7
-- **Icons**: Lucide React
-- **Notifications**: React Hot Toast
+QuickDine is a **full-stack food ordering application** with a React frontend and Node.js/Express backend. 🚀
 
 ## 🚀 Getting Started
 
-### Prerequisites
+### 📋 Prerequisites
 
-Ensure you have **Node.js** (v18 or higher) and **npm** installed.
+Make sure you have the following installed:
 
-### Installation
+* 🟢 **Node.js** v18 or higher
+* 📦 **npm**
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/quickdine-frontend.git
-   cd quickdine-frontend
-   ```
+### ⚙️ Installation
 
-2. Install dependencies:
-   ```bash
-   npm install
-   ```
+1. 📥 Clone the repository:
 
-3. Set up environment variables:
-   Create a `.env` file in the root directory:
-   ```env
-   VITE_API_URL=http://localhost:5000/api
-   ```
+```bash
+git clone https://github.com/MahalaxmiGouda-13/QuickDine.git
+cd QuickDine
+```
 
-### Development Server
+2. 💻 Install frontend dependencies:
 
-Run the development server locally:
+```bash
+cd client
+npm install
+```
+
+3. 🖥️ Install backend dependencies:
+
+Open another terminal and run:
+
+```bash
+cd server
+npm install
+```
+
+### 🔐 Environment Variables
+
+Create a `.env` file inside the `client` folder:
+
+```env
+VITE_API_URL=http://localhost:5000/api
+```
+
+Create the required `.env` file inside the `server` folder with your backend configuration.
+
+> ⚠️ **Important:** Never commit `.env` files containing passwords, API keys, database credentials, or other secrets.
+
+## 🛠️ Development Server
+
+### 💻 Frontend
+
+From the `client` folder:
+
 ```bash
 npm run dev
 ```
-Open `http://localhost:5173` in your browser.
 
-### Building for Production
+Open your browser at:
 
-Compile typescript and build the production bundle:
+🌐 `http://localhost:5173`
+
+### 🖥️ Backend
+
+From the `server` folder:
+
+```bash
+npm run dev
+```
+
+The backend will run on the port configured in your server environment variables.
+
+## 📦 Building for Production
+
+From the `client` folder:
+
 ```bash
 npm run build
 ```
 
-Preview the production build locally:
+### 👀 Preview Production Build
+
 ```bash
 npm run preview
 ```
+
+## 📁 Project Structure
+
+```text
+QuickDine/
+├── 📂 client/       # React frontend
+├── 📂 server/       # Node.js/Express backend
+├── 📄 .gitignore
+└── 📄 README.md
+```
+
+## ✨ Features
+
+* 🍔 Browse restaurants and food items
+* 🔍 Search and explore restaurants
+* 🛒 Manage food orders
+* 👤 User authentication
+* 📋 Restaurant management
+* 📊 Admin dashboard
+* 📱 Responsive design
+
+## 🧑‍💻 Technologies Used
+
+* ⚛️ React
+* 🟦 TypeScript
+* 🟢 Node.js
+* 🚂 Express.js
+* 🍃 MongoDB
+* 🎨 Tailwind CSS
+* 🔗 REST API
+
+## 📌 Notes
+
+Make sure both the **frontend and backend servers are running** during local development.
+
+Happy coding! 🚀💻
 
 
