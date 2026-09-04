@@ -62,7 +62,13 @@ export const AppContextProvider = ({ children }: Props) => {
     const register = async (name: string, email: string, password: string, phone?: string, role?: string): Promise<boolean> => {
         try {
           setLoading(true);
-          const res = await api.post("/auth/ register", {name, email, password ,phone,role});
+         const res = await api.post("/auth/register", {
+    name,
+    email,
+    password,
+    phone,
+    role
+});
           const { token: userToken, ...userData } = res.data;
 
           localStorage.setItem("token", userToken);
