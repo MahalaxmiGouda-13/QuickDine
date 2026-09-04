@@ -68,10 +68,4 @@ Preview the production build locally:
 npm run preview
 ```
 
-## 🤝 Contributing
 
-We welcome contributions! Please see [CONTRIBUTING.md](./CONTRIBUTING.md) for guidelines on how to get started.
-
-## 📄 License
-
-Distributed under the MIT License. See [LICENSE.md](./LICENSE.md) for more details.
